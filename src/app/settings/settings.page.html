@@ -1,0 +1,75 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Pengaturan</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list inset="true" id="account">
+    <ion-list-header>
+      <ion-label>Akun & Data</ion-label>
+    </ion-list-header>
+
+    <ion-item button detail="true" (click)="EditPlayerModalopen()">
+      <ion-icon name="person-add-outline" slot="start" color="primary"></ion-icon>
+      <ion-label>Ganti Pemain</ion-label>
+    </ion-item>
+
+    <ion-item button detail="false" (click)="resetSkor()">
+      <ion-icon name="trash-outline" slot="start" color="danger"></ion-icon>
+      <ion-label color="danger">Hapus Riwayat Skor</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list inset="true" id="information">
+    <ion-list-header>
+      <ion-label>Informasi</ion-label>
+    </ion-list-header>
+
+    <ion-item button detail="true" routerLink="/settings/how-to-play">
+      <ion-icon name="help-circle-outline" slot="start" color="medium"></ion-icon>
+      <ion-label>Cara Bermain</ion-label>
+    </ion-item>
+
+    <ion-item button detail="true" routerLink="/settings/about-app">
+      <ion-icon name="information-circle-outline" slot="start" color="medium"></ion-icon>
+      <ion-label>Tentang Aplikasi</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <div class="ion-text-center" style="margin-top: 40px; color: #eff3fd; font-size: 0.9rem;">
+    <p>Eduku App: v1.0.0</p>
+  </div>
+
+</ion-content>
+
+<app-tabs></app-tabs>
+
+<ion-modal [isOpen]="isAddPlayer" [backdropDismiss]="false" class="glass-modal">
+  <ng-template>
+    <ion-content class="ion-padding transparent-content">
+
+      <div class="form-container">
+        <div class="header-close" (click)="closeModal()">
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+
+        <h2>Masukkan Nama Pemain</h2>
+
+        <ion-item class="input-nama">
+          <ion-input [(ngModel)]="namaPemain" placeholder="Ketik nama di sini..."></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" (click)="EditPlayer()" [disabled]="!namaPemain">
+          Simpan & Lanjutkan
+        </ion-button>
+      </div>
+
+    </ion-content>
+  </ng-template>
+</ion-modal>

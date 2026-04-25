@@ -1,27 +1,135 @@
-#container {
-  text-align: center;
+ion-content {
+    --background: linear-gradient(180deg, #002fff 0%, #0077ff 100%);
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+
+    #first-container {
+        width: 100%;
+
+        .say-hello-card {
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            font-size: 20px;
+            margin: 25px;
+
+            p {
+                margin: 0;
+                color: #eff3fd;
+            }
+        }
+
+        .logo-app {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            width: 150px;
+            height: 50px;
+            margin: 20px auto;
+
+            ion-img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .carousel-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 25px;
+        padding: 20px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .carousel-item {
+            flex: 0 0 85%;
+            margin: 0;
+            scroll-snap-align: center;
+            border-radius: 15px;
+            width: 250px;
+            height: 150px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
+
+    .card-quiz-level {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+        gap: 15px;
+
+        .easy-level,
+        .medium-level,
+        .hard-level {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 10px auto;
+            padding: 10px;
+            gap: 15px;
+            width: 90%;
+            border-radius: 15px;
+            background: #0077ff;
+
+            ion-card-subtitle,
+            ion-card-title {
+                margin: 0;
+                color: #eff3fd;
+                font-size: 20px;
+            }
+        }
+
+        #easy-level {
+            background: linear-gradient(180deg, #00a516 0%, #007410 100%);
+        }
+
+        #medium-level {
+            background: linear-gradient(180deg, #ff9900 0%, #b36b00 100%);
+        }
+
+        #hard-level {
+            background: linear-gradient(180deg, #ff0000 0%, #910000 100%);
+        }
+    }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+.glass-modal {
+    --background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+    .transparent-content {
+        --background: transparent;
 
-  color: #8c8c8c;
+        .form-container {
+            background: #b1c7f1;
+            padding: 30px 20px;
+            border-radius: 20px;
+            margin-top: 40%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            text-align: center;
 
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+            .input-nama {
+                margin: 20px 0;
+                border-radius: 10px;
+                --background: #f4f5f8;
+            }
+        }
+    }
 }

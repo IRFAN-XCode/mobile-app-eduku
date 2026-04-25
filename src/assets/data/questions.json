@@ -1,0 +1,272 @@
+[
+    {
+        "id": 1,
+        "level": "easy",
+        "pertanyaan": "Mencoba narkoba satu kali saja tidak akan membuat seseorang mengalami kecanduan.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 2,
+        "level": "easy",
+        "pertanyaan": "Berdasarkan Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika disebutkan bahwa narkotika adalah zat atau obat yang berasal dari tanaman atau bukan tanaman, baik sintetis maupun semisintetis, yang dapat menyebabkan penurunan atau perubahan kesadaran, hilangnya rasa, mengurangi sampai menghilangkan rasa nyeri, dan dapat menimbulkan ketergantungan",
+        "jawaban_benar": true
+    },
+    {
+        "id": 3,
+        "level": "easy",
+        "pertanyaan": "Ganja medis legal dan diizinkan untuk dikonsumsi secara bebas di Indonesia.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 4,
+        "level": "easy",
+        "pertanyaan": "Menggunakan jarum suntik secara bergantian saat memakai narkoba sangat berisiko menularkan virus HIV/AIDS.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 5,
+        "level": "easy",
+        "pertanyaan": "Sabu-sabu adalah jenis suplemen yang aman digunakan mahasiswa untuk menambah stamina saat begadang belajar.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 6,
+        "level": "easy",
+        "pertanyaan": "Menyimpan atau membawa tas berisi narkotika milik teman (orang lain) tetap dianggap sebagai tindakan melanggar hukum.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 7,
+        "level": "easy",
+        "pertanyaan": "Narkotika hanya merusak organ fisik manusia dan tidak memberikan dampak buruk pada kesehatan mental atau psikis.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 8,
+        "level": "easy",
+        "pertanyaan": "Ekstasi merupakan jenis narkotika yang bersifat stimulan, yaitu memacu kerja otak dan jantung lebih cepat dari batas normal.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 9,
+        "level": "easy",
+        "pertanyaan": "Rehabilitasi adalah proses pemulihan medis dan sosial bagi pecandu narkotika agar dapat kembali hidup normal.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 10,
+        "level": "easy",
+        "pertanyaan": "Mahasiswa dilarang melaporkan indikasi peredaran narkoba di lingkungan kampus karena itu hanya tugas pihak kepolisian.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 11,
+        "level": "easy",
+        "pertanyaan": "Narkoba merupakan akronim dari Narkotika, Psikotropika, dan Bahan Adiktif.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 12,
+        "level": "easy",
+        "pertanyaan": "Dehidrasi, halusinasi, menurunnya tingkat kesadaran, kematian dan gangguan kualitas hidup merupakan dampak bahaya akibat penggunaan narkoba",
+        "jawaban_benar": true
+    },
+    {
+        "id": 13,
+        "level": "easy",
+        "pertanyaan": "Seluruh jenis narkoba dapat memberikan dampak bahaya bagi penggunannya.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 14,
+        "level": "easy",
+        "pertanyaan": "Narkotika jenis semi sintetis sering digunakan untuk keperluan pengobatan dan penelitian.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 15,
+        "level": "easy",
+        "pertanyaan": "Selain BNN lembaga yang berwenang dalam pemberantasan narkoba di Indonesia, UNODC (United Nations Office on Drugs and Crime) sebagai lembaga internasional di bawah Perserikatan Bangsa-Bangsa (PBB) juga bergerak di bidang pemberantasan narkoba.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 16,
+        "level": "medium",
+        "pertanyaan": "Berdasarkan hasil survei prevalensi penyalahgunaan narkoba di Indonesia di tahun 2023 sebesar 1,73% atau setara dengan 3,333 juta jiwa yang di mana mengalami penurunan 0,22% dibandingkan tahun 2021",
+        "jawaban_benar": true
+    },
+    {
+        "id": 17,
+        "level": "medium",
+        "pertanyaan": "Pecandu narkoba yang dengan sukarela melapor ke Institusi Penerima Wajib Lapor (IPWL) tidak akan dituntut pidana.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 18,
+        "level": "medium",
+        "pertanyaan": "Afghanistan, Bolivia, Meksiko, Kolombia, Maroko dan Myanmar. Beberapa negara yang disebutkan merupakan 6 Negara yang memiliki persentase pengedar narkoba yang rendah",
+        "jawaban_benar": false
+    },
+    {
+        "id": 19,
+        "level": "medium",
+        "pertanyaan": "Berdasarkan data dari Badan Narkotika Nasional (BNN) pada tahun 2011, jumlah pengguna narkoba di tempat kerja cenderung lebih rendah dibandingkan jumlah pengguna usia remaja, karena usia pekerja sudah mencapai dewasa dan usia matang.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 20,
+        "level": "medium",
+        "pertanyaan": "Sejak tahun 1971, Amerika Serikat telah menghabiskan 1 triliun USD dalam upaya memberantas kejahatan terkait narkoba ",
+        "jawaban_benar": true
+    },
+    {
+        "id": 21,
+        "level": "medium",
+        "pertanyaan": "Drug Enforcement Administration (DEA) merupakan forum internasional yang memfasilitasi kerja sama dan pertukaran informasi antar lembaga penegak hukum di seluruh dunia dalam memberantas sindikat narkotika.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 22,
+        "level": "medium",
+        "pertanyaan": "Narkotika golongan 3 memiliki risiko ketergantungan yang lebih rendah dibandingkan narkotika golongan 1.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 23,
+        "level": "medium",
+        "pertanyaan": "Orang tua atau wali dari pecandu yang belum cukup umur yang sengaja tidak melapor, dipidana dengan pidana kurungan paling lama 6 bulan atau pidana denda paling banyak Rp1.000.000,00",
+        "jawaban_benar": true
+    },
+    {
+        "id": 24,
+        "level": "medium",
+        "pertanyaan": "Undang-Undang Nomor 35 Tahun 2009 tentang Narkotika BAB XV membahas mengenai tindak pidana bagi penyalahguna narkotika di Indonesia",
+        "jawaban_benar": true
+    },
+    {
+        "id": 25,
+        "level": "medium",
+        "pertanyaan": "Pecandu Narkotika yang belum cukup umur dan telah dilaporkan oleh orang tua atau walinya tidak dituntut pidana",
+        "jawaban_benar": true
+    },
+    {
+        "id": 26,
+        "level": "medium",
+        "pertanyaan": "Setiap orang yang tanpa hak atau melawan hukum menanam, memelihara, memiliki, menyimpan, menguasai, atau menyediakan Narkotika Golongan I dalam bentuk tanaman, dipidana dengan pidana penjara paling singkat 3 tahun dan paling lama 10 tahun dan pidana denda paling sedikit Rp800.000.000,00 dan paling banyak Rp8.000.000.000,00",
+        "jawaban_benar": false
+    },
+    {
+        "id": 27,
+        "level": "medium",
+        "pertanyaan": "Dalam menyikapi kasus peredaran narkoba, Tiongkok menerapkan hukuman mati yang tegas untuk pengedar narkoba.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 28,
+        "level": "medium",
+        "pertanyaan": "Di indonesia, peraturan tentang narkotika diatur dalam Undang-Undang Nomor 34 Tahun 2009 Tentang Narkotika",
+        "jawaban_benar": false
+    },
+    {
+        "id": 29,
+        "level": "medium",
+        "pertanyaan": "Tanggal 26 Juni merupakan peringatan Hari Internasional Melawan Penyalahgunaan dan Peredaran Gelap Narkoba",
+        "jawaban_benar": true
+    },
+    {
+        "id": 30,
+        "level": "medium",
+        "pertanyaan": "Dari banyaknya jenis narkoba, narkotika golongan 2 dapat digunakan untuk kepentingan pengembangan ilmu pengetahuan dan teknologi dan reagensia diagnostik, serta reagensia laboratorium setelah mendapat persetujuan Menteri atas rekomendasi Kepala BPOM.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 31,
+        "level": "hard",
+        "pertanyaan": "International Narcotics Control Board (INCB) dibentuk pada tahun 1968 ",
+        "jawaban_benar": false
+    },
+    {
+        "id": 32,
+        "level": "hard",
+        "pertanyaan": "Pusat Statistik Penyalahgunaan Narkoba Nasional AS (NCDAS) mencatat terdapat 6 kategori narkoba yang paling umum digunakan di negara Amerika Serikat.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 33,
+        "level": "hard",
+        "pertanyaan": "Setiap orang yang tanpa hak atau melawan hukum menawarkan untuk dijual, menjual, membeli, menerima, menjadi perantara dalam jual beli, menukar, atau menyerahkan Narkotika Golongan I, dipidana dengan pidana penjara seumur hidup atau pidana penjara paling singkat 5 tahun dan paling lama 20 tahun dan pidana denda paling sedikit Rp1.000.000.000,00 dan paling banyak Rp10.000.000.000,00",
+        "jawaban_benar": true
+    },
+    {
+        "id": 34,
+        "level": "hard",
+        "pertanyaan": "International Narcotics Control Board (INCB) merupakan organisasi internasional yang independen dan berfungsi mengawasi pelaksanaan konvensi pengendalian narkoba internasional oleh pemerintah negara-negara",
+        "jawaban_benar": true
+    },
+    {
+        "id": 35,
+        "level": "hard",
+        "pertanyaan": "International Criminal Police Organization merupakan organisasi kepolisian internasional yang memiliki peran dalam memfasilitasi kerja sama kepolisian internasional untuk memberantas kejahatan transnasional termasuk penyelundupan narkoba",
+        "jawaban_benar": true
+    },
+    {
+        "id": 36,
+        "level": "hard",
+        "pertanyaan": "Pada tahun 2017, biaya pengendalian narkoba di Amerika Serikat melebihi 270 miliar dolar AS.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 37,
+        "level": "hard",
+        "pertanyaan": "Menurut Laporan Narkoba Dunia UNODC, kokain adalah jenis narkotika yang paling banyak disalahgunakan secara global dibandingkan ganja.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 38,
+        "level": "hard",
+        "pertanyaan": "Fentanil adalah opioid sintetis yang kekuatannya diperkirakan 50 hingga 100 kali lebih kuat daripada morfin, sehingga sangat rawan menyebabkan overdosis fatal.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 39,
+        "level": "hard",
+        "pertanyaan": "Organisasi Kesehatan Dunia (WHO) mengklasifikasikan kecanduan narkoba murni sebagai kelemahan moral, bukan sebagai penyakit atau gangguan fungsi otak.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 40,
+        "level": "hard",
+        "pertanyaan": "Konvensi Tunggal PBB tentang Narkotika Tahun 1961 merupakan perjanjian internasional pertama yang membatasi penggunaan ganja dan opioid secara ketat hanya untuk tujuan medis.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 41,
+        "level": "hard",
+        "pertanyaan": "Metamfetamin (sabu-sabu) dan Heroin memiliki efek yang sama pada sistem saraf pusat, yaitu bertindak sebagai depresan yang memperlambat detak jantung.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 42,
+        "level": "hard",
+        "pertanyaan": "New Psychoactive Substances (NPS) adalah narkotika sintetis baru yang sengaja didesain secara kimiawi untuk meniru efek obat terlarang sekaligus menghindari jeratan hukum.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 43,
+        "level": "hard",
+        "pertanyaan": "Penggunaan kokain dalam dosis tinggi secara tiba-tiba tidak memberikan dampak langsung pada kardiovaskular, melainkan hanya merusak paru-paru.",
+        "jawaban_benar": false
+    },
+    {
+        "id": 44,
+        "level": "hard",
+        "pertanyaan": "Toleransi narkotika adalah kondisi medis di mana tubuh pengguna membutuhkan dosis zat yang semakin tinggi untuk mendapatkan efek yang sama seperti penggunaan sebelumnya.",
+        "jawaban_benar": true
+    },
+    {
+        "id": 45,
+        "level": "hard",
+        "pertanyaan": "Bahan kimia prekursor seperti Ephedrine dibebaskan dari pengawasan internasional karena tidak dapat digunakan dalam pembuatan narkotika ilegal.",
+        "jawaban_benar": false
+    }
+]

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +6,31 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
   standalone: false,
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
-  constructor() {}
+  isFirstTime: boolean = false;
+  namaPemain: string = '';
 
+  constructor() { }
+
+  ngOnInit() {
+    const namaTersimpan = localStorage.getItem('pemain_nama');
+
+    if (namaTersimpan) {
+      this.isFirstTime = false;
+      this.namaPemain = namaTersimpan;
+    } else {
+      this.isFirstTime = true;
+    }
+  }
+  simpanNama() {
+    localStorage.setItem('pemain_nama', this.namaPemain);
+    this.isFirstTime = false;
+  }
 }
+
+
+
+
+
+

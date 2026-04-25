@@ -1,0 +1,117 @@
+ion-header {
+    ion-toolbar {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 5px;
+        background-color: #eff3fd;
+
+        ion-back-button {
+            color: #002fff;
+            margin-right: 70px;
+        }
+
+        ion-title {
+            color: #002fff;
+            font-size: 22px;
+        }
+    }
+}
+
+ion-content {
+    --background: linear-gradient(180deg, #002fff 0%, #0077ff 100%);
+
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+
+        .image {
+            width: 200px;
+            height: 100px;
+            margin: 30px auto;
+            background-color: aqua;
+        }
+
+        .leaderboard-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5px;
+            gap: 15px;
+
+            .rank-content-null {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 250px;
+                border-radius: 10px;
+                background: #c8d9fa;
+                color: #eff3fd;
+                padding: 10px;
+
+                ion-icon {
+                    font-size: 50px;
+                    color: #002fff;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    color: #002fff;
+                }
+
+                p {
+                    color: #002fff;
+                    font-size: 18px;
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+
+            ion-list {
+                background: #c8d9fa;
+                border-radius: 10px;
+
+                ion-list-header {
+                    ion-label {
+                        font-size: 24px;
+                        color: #002fff;
+                    }
+                }
+
+                ion-item {
+                    --background: #c8d9fa;
+
+                    ion-avatar {
+                        background: #0077ff;
+                        color: #eff3fd;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: bold;
+                    }
+
+                    ion-label {
+                        h2 {
+                            font-weight: bold;
+                            color: #002fff;
+                        }
+
+                        p {
+                            color: black;
+                        }
+                    }
+
+                    ion-badge {
+                        font-size: 1rem;
+                        padding: 8px;
+                        color: #eff3fd;
+                        background: #0077ff;
+                        border-radius: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

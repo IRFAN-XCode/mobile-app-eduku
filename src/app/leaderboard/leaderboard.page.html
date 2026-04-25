@@ -1,0 +1,52 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Leaderboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+
+    <div class="image">
+      <img src="assets/image/winner.png" alt="Winner Quiz">
+    </div>
+
+    <div class="leaderboard-list">
+
+      <div class="rank-content-null" *ngIf="daftarRanking.length === 0">
+        <ion-icon name="trophy-outline"></ion-icon>
+        <h3>Belum Ada Daftar Peringkat</h3>
+        <p>Ayo mainkan kuisnya dan jadilah yang pertama!</p>
+      </div>
+
+      <ion-list inset="true" *ngIf="daftarRanking.length > 0">
+        <ion-list-header>
+          <ion-label>Top Skor Lokal</ion-label>
+        </ion-list-header>
+
+        <ion-item *ngFor="let pemain of daftarRanking; let i = index">
+
+          <ion-avatar slot="start">
+            {{ i + 1 }}
+          </ion-avatar>
+
+          <ion-label>
+            <h2>{{ pemain.nama }}</h2>
+            <p>Level: <span class="ion-text-capitalize">{{ pemain.level }}</span> | {{ pemain.tanggal }}</p>
+          </ion-label>
+
+          <ion-badge color="success" slot="end">
+            {{ pemain.skor }} Pts
+          </ion-badge>
+
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>
+
+<app-tabs></app-tabs>

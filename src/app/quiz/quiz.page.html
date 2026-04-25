@@ -1,0 +1,67 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div id="card-container">
+
+    <div class="text-title">
+      <p>Level: {{ chooseLevel }}</p>
+    </div>
+
+    <div class="question-card" *ngIf="questionsIsKnow">
+      <div class="header-quiz">
+        <ion-chip id="number">
+          <ion-label>Soal: {{ indexQuestion + 1 }} / {{ allQuestion.length }}</ion-label>
+        </ion-chip>
+
+        <ion-chip [color]="timer <= 5 ? 'danger' : 'warning'">
+          <ion-icon name="timer-outline"></ion-icon>
+          <ion-label>{{ timer }}s</ion-label>
+        </ion-chip>
+      </div>
+
+      <ion-card class="card-soal">
+        <ion-card-content class="ion-text-center">
+          <p>
+            {{ questionsIsKnow.pertanyaan }}
+          </p>
+        </ion-card-content>
+      </ion-card>
+
+      <div class="card-jawaban">
+        <ion-button expand="block" color="success" shape="round" size="large" (click)="checkAnswer(true)">
+          Benar
+        </ion-button>
+
+        <ion-button expand="block" color="danger" shape="round" size="large" (click)="checkAnswer(false)">
+          Salah
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-modal [isOpen]="ModalSkor" [backdropDismiss]="false" class="glass-modal">
+  <ng-template>
+    <ion-content class="ion-padding transparent-content">
+
+      <div class="skor-container">
+        <h2>Kuis Selesai!</h2>
+
+        <p>Level: {{ chooseLevel }}</p>
+        <p>Skor Akhir: {{ skor }}</p>
+
+        <ion-button expand="block" (click)="closeModal()">
+          Tutup
+        </ion-button>
+      </div>
+
+    </ion-content>
+  </ng-template>
+</ion-modal>

@@ -1,0 +1,14 @@
+ion-footer {
+    ion-tab-bar {
+        --background: #002fff;
+        --color: #eff3fd;
+        --border: 1px solid #ddd;
+        display: flex;
+
+        ion-tab-button {
+            ion-icon {
+                color: #eff3fd;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+ion-header {
+    ion-toolbar {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 5px;
+
+        ion-back-button {
+            color: #002fff;
+        }
+
+        ion-title {
+            color: #002fff;
+            font-size: 22px;
+        }
+    }
+}
+
+ion-content {
+    --background: linear-gradient(180deg, #002fff 0%, #0077ff 100%);
+
+    .disclaimer {
+        h2 {
+            color: #ffd900;
+        }
+
+        p {
+            color: black;
+        }
+    }
+
+    ion-card {
+        padding: 20px;
+        color: black;
+        border-radius: 10px;
+
+        h2 {
+            font-weight: bold;
+            margin-top: 16px;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+    }
+}

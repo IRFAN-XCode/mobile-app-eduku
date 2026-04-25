@@ -1,0 +1,7 @@
+1. Instal capacitor android
+2. install android studio
+3. cmd vscode "npx cap add android"
+4. cmd vscode "ionic build"
+5. sinkronisasi ionic dengan android "npx cap sync andorid"
+6. buka android studio "npx cap open android"
+7.

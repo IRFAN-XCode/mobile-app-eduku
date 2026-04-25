@@ -1,0 +1,73 @@
+ion-content {
+    --background: linear-gradient(180deg, #002fff 0%, #0077ff 100%);
+
+    #account,
+    #information {
+        background: #eff3fd;
+        border-radius: 16px;
+        margin: 10px;
+        margin: 20px;
+
+        ion-list-header {
+            color: #002fff;
+            font-size: 18px;
+        }
+    }
+}
+
+.glass-modal {
+    --background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    .transparent-content {
+        --background: transparent;
+
+        .form-container {
+            background: #b1c7f1;
+            padding: 30px 20px;
+            border-radius: 20px;
+            margin-top: 40%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            text-align: center;
+
+            .header-close {
+                display: flex;
+                justify-content: end;
+
+                ion-icon {
+                    font-size: 24px;
+                    cursor: pointer;
+                    color: #002fff;
+                }
+            }
+
+
+            .input-nama {
+                margin: 20px 0;
+                border-radius: 10px;
+                --background: #f4f5f8;
+            }
+        }
+    }
+}
+
+ion-header {
+    ion-toolbar {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 5px;
+        background-color: #eff3fd;
+
+        ion-back-button {
+            color: #002fff;
+            margin-right: 70px;
+        }
+
+        ion-title {
+            color: #002fff;
+            font-size: 22px;
+        }
+    }
+}
