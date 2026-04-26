@@ -31,7 +31,6 @@ export class QuizPage implements OnInit {
 
   ngOnInit() {
     this.chooseLevel = this.route.snapshot.paramMap.get('level') || '';
-    console.log('Kamu sedang memilih level:', this.chooseLevel);
     this.loadQuestion();
   }
 
@@ -103,7 +102,6 @@ export class QuizPage implements OnInit {
     historySkor.push(newSkor);
 
     localStorage.setItem('data_leaderboard', JSON.stringify(historySkor));
-    console.log('Kuis Selesai! Skor:', historySkor);
   }
 
   closeModal() {
