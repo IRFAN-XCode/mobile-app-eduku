@@ -14,6 +14,10 @@ const routes: Routes = [
   },  {
     path: 'how-to-play',
     loadChildren: () => import('./how-to-play/how-to-play.module').then( m => m.HowToPlayPageModule)
+  },
+  {
+    path: 'privacypolice',
+    loadChildren: () => import('./privacypolice/privacypolice.module').then( m => m.PrivacypolicePageModule)
   }
 
 ];
