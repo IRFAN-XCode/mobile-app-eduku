@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController, ToastController } from '@ionic/angular';
+import type { OverlayEventDetail } from '@ionic/core';
 
 @Component({
   selector: 'app-settings',
@@ -17,6 +18,24 @@ export class SettingsPage implements OnInit {
   ngOnInit() {
   }
 
+  public alertButtons = [
+    {
+      text: 'Batal',
+      role: 'cancel',
+      cssClass: 'tombol-batal',
+    },
+    {
+      text: 'Hapus',
+      role: 'confirm',
+      handler: () => {
+        localStorage.removeItem('data_leaderboard');
+        this.displayMessageSuccess();
+      },
+    },
+  ];
+
+
+
   EditPlayerModalopen() {
     this.isAddPlayer = true;
   }
@@ -30,28 +49,6 @@ export class SettingsPage implements OnInit {
     this.isAddPlayer = false;
   }
 
-  async resetSkor() {
-    const alert = await this.alertCtrl.create({
-      header: "Hapus Semua Data?",
-      message: "Semua skor di papan peringkat akan dihapus permanen.",
-      buttons: [
-        {
-          text: 'Batal',
-          role: 'cancel',
-          cssClass: 'secondary'
-        },
-        {
-          text: 'Hapus',
-          handler: () => {
-            localStorage.removeItem('data_leaderboard');
-            this.displayMessageSuccess();
-          }
-        }
-      ]
-    });
-
-    await alert.present();
-  }
 
   async displayMessageSuccess() {
     const toast = await this.toastCtrl.create({

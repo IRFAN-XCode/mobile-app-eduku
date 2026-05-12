@@ -1,5 +1,6 @@
 ion-content {
     --background: linear-gradient(180deg, #002fff 0%, #0077ff 100%);
+    --padding-top: 20px;
 
 
     #first-container {
@@ -129,6 +130,12 @@ ion-content {
                 margin: 20px 0;
                 border-radius: 10px;
                 --background: #f4f5f8;
+                --color: #002fff;
+            }
+
+            h2,
+            p {
+                color: black;
             }
         }
     }

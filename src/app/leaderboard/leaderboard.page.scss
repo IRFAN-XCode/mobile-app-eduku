@@ -1,14 +1,15 @@
-ion-header {
+.header {
     ion-toolbar {
         display: flex;
         justify-content: left;
         align-items: center;
-        padding: 5px;
-        background-color: #eff3fd;
+        --padding-top: 20px;
+        --padding-start: 5px;
+        --padding-bottom: 5px;
+        --background: #eff3fd;
 
         ion-back-button {
             color: #002fff;
-            margin-right: 70px;
         }
 
         ion-title {

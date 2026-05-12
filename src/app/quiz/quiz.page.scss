@@ -1,5 +1,8 @@
-ion-header {
+.header {
     ion-toolbar {
+        --padding-top: 20px;
+        --padding-start: 5px;
+        --padding-bottom: 5px;
         --background: #eff3fd;
 
         ion-back-button {

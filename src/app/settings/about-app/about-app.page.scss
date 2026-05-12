@@ -1,9 +1,12 @@
-ion-header {
+.header {
     ion-toolbar {
         display: flex;
         justify-content: left;
         align-items: center;
-        padding: 5px;
+        --padding-top: 20px;
+        --padding-start: 5px;
+        --padding-bottom: 5px;
+        --background: #fcfdff;
 
         ion-back-button {
             color: #002fff;
@@ -20,19 +23,32 @@ ion-content {
     --background: linear-gradient(180deg, #002fff 0%, #0077ff 100%);
 
     .disclaimer {
+        background: #f8f9ff;
+        margin: 15px;
+        padding: 10px;
+        border-radius: 10px;
+
         h2 {
             color: #ffd900;
         }
 
         p {
             color: black;
+            line-height: 1.4;
+            text-align: justify;
+        }
+
+        span {
+            color: black;
         }
     }
 
-    ion-card {
+    .container {
+        background: #f8f9ff;
         padding: 20px;
         color: black;
         border-radius: 10px;
+        margin: 15px;
 
         h2 {
             font-weight: bold;

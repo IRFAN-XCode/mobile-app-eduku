@@ -1,18 +1,48 @@
 ion-content {
     --background: linear-gradient(180deg, #002fff 0%, #0077ff 100%);
 
-    #account,
-    #information {
+    #account {
         background: #eff3fd;
         border-radius: 16px;
         margin: 10px;
         margin: 20px;
+        height: 160px;
+
+        ion-item {
+            --background: #eff3fd;
+
+            ion-label {
+                --color: #0077ff;
+            }
+        }
 
         ion-list-header {
             color: #002fff;
             font-size: 18px;
         }
     }
+
+    #information {
+        background: #eff3fd;
+        border-radius: 16px;
+        margin: 10px;
+        margin: 20px;
+        height: 200px;
+
+        ion-item {
+            --background: #eff3fd;
+
+            ion-label {
+                --color: #272626;
+            }
+        }
+
+        ion-list-header {
+            color: #002fff;
+            font-size: 18px;
+        }
+    }
+
 }
 
 .glass-modal {
@@ -46,23 +76,30 @@ ion-content {
             .input-nama {
                 margin: 20px 0;
                 border-radius: 10px;
-                --background: #f4f5f8;
+                --background: #f8f8f4;
+                --color: #002fff;
+            }
+
+            p {
+                color: black;
+                font-size: 24px;
             }
         }
     }
 }
 
-ion-header {
+.header {
     ion-toolbar {
         display: flex;
         justify-content: left;
         align-items: center;
-        padding: 5px;
-        background-color: #eff3fd;
+        --padding-top: 20px;
+        --padding-start: 5px;
+        --padding-bottom: 5px;
+        --background: #fcfdff;
 
         ion-back-button {
             color: #002fff;
-            margin-right: 70px;
         }
 
         ion-title {

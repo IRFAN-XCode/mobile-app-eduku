@@ -90,19 +90,56 @@ export class QuizPage implements OnInit {
 
     this.ModalSkor = true;
 
-    let newSkor = {
-      nama: username,
-      level: this.chooseLevel,
-      skor: this.skor,
-      tanggal: new Date().toLocaleDateString('id-ID')
-    };
-
+    // Ambil data leaderboard yang sudah ada (atau array kosong jika belum ada)
     let historySkor = JSON.parse(localStorage.getItem('data_leaderboard') || '[]');
 
-    historySkor.push(newSkor);
+    // Cari apakah pemain ini sudah punya skor di LEVEL YANG SAMA
+    let existingIndex = historySkor.findIndex((item: any) => item.nama === username && item.level === this.chooseLevel);
 
+    if (existingIndex !== -1) {
+      // JIKA SUDAH ADA: Cek apakah skor barunya lebih tinggi dari skor lama
+      if (this.skor > historySkor[existingIndex].skor) {
+        // Jika lebih tinggi, perbarui skor dan tanggalnya
+        historySkor[existingIndex].skor = this.skor;
+        historySkor[existingIndex].tanggal = new Date().toLocaleDateString('id-ID');
+      }
+      // Jika skor baru lebih kecil, sistem tidak melakukan apa-apa (skor tertinggi tetap aman)
+    } else {
+      // JIKA BELUM ADA: Buat data baru dan masukkan (push) ke array
+      let newSkor = {
+        nama: username,
+        level: this.chooseLevel,
+        skor: this.skor,
+        tanggal: new Date().toLocaleDateString('id-ID')
+      };
+      historySkor.push(newSkor);
+    }
+
+    // Urutkan leaderboard dari skor tertinggi ke terendah secara otomatis
+    historySkor.sort((a: any, b: any) => b.skor - a.skor);
+
+    // Simpan kembali data yang sudah dirapikan ke LocalStorage
     localStorage.setItem('data_leaderboard', JSON.stringify(historySkor));
   }
+
+  // quizEnded() {
+  //   let username = localStorage.getItem('pemain_nama');
+
+  //   this.ModalSkor = true;
+
+  //   let newSkor = {
+  //     nama: username,
+  //     level: this.chooseLevel,
+  //     skor: this.skor,
+  //     tanggal: new Date().toLocaleDateString('id-ID')
+  //   };
+
+  //   let historySkor = JSON.parse(localStorage.getItem('data_leaderboard') || '[]');
+
+  //   historySkor.push(newSkor);
+
+  //   localStorage.setItem('data_leaderboard', JSON.stringify(historySkor));
+  // }
 
   closeModal() {
     this.ModalSkor = false;
